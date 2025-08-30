@@ -1,0 +1,17 @@
+# Enable URL rewriting
+RewriteEngine On
+
+# Redirect to index.php if directory is accessed
+DirectoryIndex index.php
+
+# Prevent access to .git and sensitive files
+<FilesMatch "(\.git|\.env|connection\.php|deploy\.yml)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Disable directory listing
+Options -Indexes
+
+# Force PHP files to be executed
+AddType application/x-httpd-php .php
