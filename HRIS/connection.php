@@ -1,11 +1,11 @@
 <?php
 // connection.php
 
-// Database credentials
-$servername = "localhost";
-$username = "root"; // Your DB username
-$password = ""; // Your DB password
-$dbname = "hris_db"; // Your DB name
+// InfinityFree Database credentials
+$servername = "sql301.infinityfree.com"; // Replace with your actual DB host from InfinityFree
+$username   = "if0_39823250";     // Your InfinityFree DB username
+$password   = "37BPLd0Evf4";     // Your InfinityFree DB password
+$dbname     = "if0_39823250_hris_db"; // Your InfinityFree database name
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
