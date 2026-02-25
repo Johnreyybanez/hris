@@ -1,11 +1,9 @@
 <?php
-$config = require 'config.php';
-$apiKey = $config['openai_key'];
 // chatbot.php
 header('Content-Type: application/json');
 
 // Your OpenAI API Key
-
+$apiKey = "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";
 
 // Read user message
 $input = json_decode(file_get_contents("php://input"), true);
